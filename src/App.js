@@ -4,13 +4,13 @@ import { useState } from "react";
 export default function App() {
   const [users, setUsers] = useState([]);
   const [message, setMessage] = useState(
-    "⚠️ Primero debes subir el archivo 'usersNotFollowingBack.json'"
+    "⚠️ First you need to upload the 'usersNotFollowingBack.json' file"
   );
 
   const handleCopyToClipboard = () => {
     const usersToUnfollow = users.filter((user) => user.checked);
     navigator.clipboard.writeText(JSON.stringify(usersToUnfollow)).then(() => {
-      alert("Usuarios a eliminar copiados! 📄");
+      alert("Usersname to be deleted are copied! 📄");
     });
   };
 
@@ -21,7 +21,7 @@ export default function App() {
       const jsonFile = JSON.parse(e.target.result);
       setUsers(jsonFile);
       setMessage(
-        "Selecciona (☑) de la lista los usuarios que queres dejar de seguir."
+        "checkmark all the users you want to unfollow on the list."
       );
     };
   };
@@ -64,7 +64,7 @@ export default function App() {
         disabled={!users.length}
         className="mt-4 w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        Seleccionar todos los usuarios de la lista
+        Select all the users on the list
       </button>
       {users.length > 0 && (
         <div className="space-y-2">
@@ -106,17 +106,17 @@ export default function App() {
         disabled={!users.length}
         className="w-full py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        Copiar lista de usuarios seleccionados
+        Copy list of users to clipboard
       </button>
       <div className="mt-6">
         <h4 className="font-semibold text-gray-700">Resources:</h4>
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://github.com/ann0nip/RemoveInstagramUnfollowers"
+          href="https://github.com/BlackjackXXI/RemoveInstagramUnfollowers"
           className="text-blue-600 hover:text-blue-800"
         >
-          Remove Instagram Unfollowers
+          Github page
         </a>
         <br />
         <a
