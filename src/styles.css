@@ -1,0 +1,19 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.users {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(177, 177, 177);
+}
+
+.delete_icon {
+  width: 30px;
+  height: 30px;
+}
