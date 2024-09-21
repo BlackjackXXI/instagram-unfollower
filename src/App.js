@@ -113,7 +113,7 @@ export default function App() {
         <a
           target="_blank"
           rel="noreferrer"
-          href="https://github.com/BlackjackXXI/RemoveInstagramUnfollowers"
+          href="https://github.com/BlackjackXXI/instagram-unfollower"
           className="text-blue-600 hover:text-blue-800"
         >
           Github page
