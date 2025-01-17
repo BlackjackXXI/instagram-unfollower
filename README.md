@@ -46,4 +46,4 @@ Use it at your own risk!.
 
 ## Notes
 
-Part of the script was taken from the repo of [@davidarroyo1234](https://github.com/davidarroyo1234/InstagramUnfollowers)
+Part of the script was taken from the repo of [@davidarroyo1234](https://github.com/davidarroyo1234/)  [instagram unfolower GUI](https://github.com/BlackjackXXI/InstagramUnfollowerGUI)
